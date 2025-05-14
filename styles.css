@@ -1,0 +1,32 @@
+body {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+h1 {
+    font-size: 64px;
+}
+
+svg {
+    width: 600px;
+    height: 600px;
+}
+
+.segment {
+    cursor: pointer;
+    stroke: #000;
+    stroke-width: 0.1;
+}
+
+.red { fill: red; }
+.green { fill: green; }
+.blue { fill: blue; }
+.yellow { fill: yellow; }
+.pressed {
+    fill: #fff;
+    box-shadow: 0 2px #fff;
+}
