@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Simon Game</title>
+    <style>
+        body {
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        svg {
+            width: 300px;
+            height: 300px;
+        }
+
+        .segment {
+            cursor: pointer;
+            stroke: #222;
+            stroke-width: 2;
+        }
+
+        .red { fill: red; }
+        .green { fill: green; }
+        .blue { fill: blue; }
+        .yellow { fill: yellow; }
+    </style>
+</head>
+<body>
+
+<svg viewBox="0 0 100 100">
+    <!-- Red (Top Left) -->
+    <path class="segment red"
+          d="M50,50 L0,50 A50,50 0 0,1 50,0 L50,15 A35,35 0 0,0 15,50 Z"
+          fill-rule="evenodd"/>
+
+    <!-- Green (Top Right) -->
+    <path class="segment green"
+          d="M50,50 L50,0 A50,50 0 0,1 100,50 L85,50 A35,35 0 0,0 50,15 Z"
+          fill-rule="evenodd"/>
+
+    <!-- Blue (Bottom Right) -->
+    <path class="segment blue"
+          d="M50,50 L100,50 A50,50 0 0,1 50,100 L50,85 A35,35 0 0,0 85,50 Z"
+          fill-rule="evenodd"/>
+
+    <!-- Yellow (Bottom Left) -->
+    <path class="segment yellow"
+          d="M50,50 L50,100 A50,50 0 0,1 0,50 L15,50 A35,35 0 0,0 50,85 Z"
+          fill-rule="evenodd"/>
+</svg>
+
+</body>
+</html>
